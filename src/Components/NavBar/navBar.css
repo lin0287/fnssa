@@ -1,0 +1,18 @@
+.customNavbar {
+  background-color: #011C2C;
+}
+
+.navbar-dark .navbar-brand {
+  color: yellow;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.customBrand {
+  font-weight: bolder;
+  font-size: x-large;
+  white-space: unset;
+  padding-right: 10%;
+}
