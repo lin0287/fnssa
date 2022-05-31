@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/open-dyslexic');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +14,8 @@ code {
     monospace;
 }
 
-.dyslexic {
-  font-family: OpenDyslexic, serif;
+.dyslexia {
+  font-family: 'OpenDyslexicRegular';
+  font-weight: normal;
+  font-style: normal;
 }

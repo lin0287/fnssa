@@ -1,10 +1,15 @@
-import React from "react";
+import React, {Dispatch, SetStateAction} from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import './navBar.css'
+import AccessibilityOptions from "./AccessibilityOptions/AccessibilityOptions";
 
-export default function NavBar() {
-  return(
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+interface NavBarParams {
+  setAccessibilityMode: Dispatch<SetStateAction<string>>;
+}
+
+export default function NavBar(props: NavBarParams) {
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand className="customBrand" href="/">Flinders Neurodivergent Study Support and Advocacy</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -15,6 +20,7 @@ export default function NavBar() {
             <Nav.Link href="/team">Our Team</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
+          <AccessibilityOptions setAccessibilityMode={props.setAccessibilityMode}/>
         </Navbar.Collapse>
       </Container>
     </Navbar>

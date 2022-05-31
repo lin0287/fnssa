@@ -10,9 +10,14 @@
   color: white;
 }
 
+.container {
+  margin: 0px;
+}
+
 .customBrand {
   font-weight: bolder;
   font-size: x-large;
   white-space: unset;
-  padding-right: 10%;
+  padding-right: 2.5%;
+  margin: 0px;
 }
