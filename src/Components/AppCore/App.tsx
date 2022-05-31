@@ -1,21 +1,25 @@
 import React, {useState} from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Router, Route, Routes } from 'react-router-dom'
 import Home from "../HomePage/Home";
 import NavBar from "../NavBar/NavBar";
 import Resources from "../ResourcesPage/Resources"
+import ContactUs from "../ContactUs/ContactUs";
 
 export default function App() {
   const [accessibilityMode, setAccessibilityMode] = useState<string>("");
 
   return(
-    <div className={accessibilityMode}>
+
+    <BrowserRouter>
       <NavBar setAccessibilityMode={setAccessibilityMode}/>
-    <Router>
+      <div className={accessibilityMode}>
         <Routes>
           <Route path="" element={<Home/>}/>
           <Route path="/resources" element={<Resources/>}/>
+          <Route path="/contact" element={<ContactUs/>}/>
         </Routes>
-    </Router>
-    </div>
+      </div>
+    </BrowserRouter>
+
   )
 }
