@@ -9,7 +9,7 @@ interface AccessibilityOptionsParams {
 export default function AccessibilityOptions(props: AccessibilityOptionsParams) {
   const options = [
     { value: 'dyslexia', label: 'Dyslexia' },
-    { value: 'adhd', label: 'ADHD' }
+    { value: '', label: 'Normal' }
   ]
 
   function eventHandler(event: { value: string; }) {

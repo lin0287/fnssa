@@ -11,8 +11,8 @@ export default function App() {
   return(
 
     <BrowserRouter>
-      <NavBar setAccessibilityMode={setAccessibilityMode}/>
       <div className={accessibilityMode}>
+        <NavBar setAccessibilityMode={setAccessibilityMode}/>
         <Routes>
           <Route path="" element={<Home/>}/>
           <Route path="/resources" element={<Resources/>}/>
