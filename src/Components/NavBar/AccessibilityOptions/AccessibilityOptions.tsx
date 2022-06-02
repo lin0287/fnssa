@@ -14,12 +14,13 @@ export default function AccessibilityOptions(props: AccessibilityOptionsParams) 
 
   function eventHandler(event: { value: string; }) {
     props.setAccessibilityMode(event.value);
-    console.log(event.value);
+    //console.log(event.value);
   }
 
   return(
     <Select
       options={options}
+      isSearchable={false}
       placeholder={"Accessibility"}
       // @ts-ignore
       onChange={eventHandler}

@@ -4,7 +4,7 @@ export default function ContactUs() {
 
   return(
     <p>
-      ContactUs Page Works!
+      Contact Us Page Works!
     </p>
   )
 }

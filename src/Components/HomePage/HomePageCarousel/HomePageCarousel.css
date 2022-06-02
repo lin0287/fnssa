@@ -1,7 +1,8 @@
 
 .carousel-caption{
-  color: orange;
-  bottom: 50%;
+  bottom: 25%;
 }
 
-
+.carouselCustom img {
+  filter: brightness(60%) blur(4px);
+}

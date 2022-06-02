@@ -5,7 +5,7 @@ import ResourcesAccordion from "./ResourcesAccordion/ResourcesAccordion";
 export default function Resources() {
   return(
     <div>
-    <h3>Resources</h3>
+    <h4>Resources</h4>
     <ResourcesAccordion/>
     </div>
   )

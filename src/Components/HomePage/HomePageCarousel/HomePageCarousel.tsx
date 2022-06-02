@@ -15,15 +15,15 @@ export default function App() {
   return(
     <Carousel className="carouselCustom" activeIndex={index} onSelect={handleSelect} fade>
       <Carousel.Item>
-        <Carousel.Caption>
-          <h2>Study Support</h2>
-          <h3>Some Message about Studying.</h3>
-        </Carousel.Caption>
         <img
           className="d-block w-100"
           src={studentsStudying}
           alt="First slide"
         />
+        <Carousel.Caption>
+          <h1>Study Support</h1>
+          <h2>Some Message about Studying.</h2>
+        </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
@@ -34,8 +34,8 @@ export default function App() {
         />
 
         <Carousel.Caption>
-          <h2>Advocacy</h2>
-          <h3>Some Message about Advocacy</h3>
+          <h1>Advocacy</h1>
+          <h2>Some Message about Advocacy</h2>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -46,10 +46,10 @@ export default function App() {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h2>Social</h2>
-          <h3>
+          <h1>Social</h1>
+          <h2>
             Is this even meant to be here?
-          </h3>
+          </h2>
         </Carousel.Caption>
       </Carousel.Item>
 
